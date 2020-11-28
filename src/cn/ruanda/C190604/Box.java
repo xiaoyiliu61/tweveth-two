@@ -2,15 +2,13 @@ package cn.ruanda.C190604;
 
 import java.io.Serializable;
 
-public class Box implements Serializable {
+public class Box implements Serializable{
     private int width;
     private int height;
-
     public Box(int width,int height){
         this.width=width;
         this.height=height;
     }
-
     public int getWidth(){
         return width;
     }
@@ -20,14 +18,15 @@ public class Box implements Serializable {
     public int getHeight(){
         return height;
     }
-    public void setHeight(int height){
-        this.height=height;
+
+    public void setHeight(int height) {
+        this.height = height;
     }
     @Override
     public String toString(){
         return "Box{"+
-                "width="+width+
-                ",height="+height+
+                "width"+width+
+                "height"+height+
                 '}';
     }
 }
