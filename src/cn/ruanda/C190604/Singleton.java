@@ -1,7 +1,7 @@
 package cn.ruanda.C190604;
 
 
-/*
+
 public class Singleton{
     private Singleton(){
 
@@ -11,7 +11,8 @@ public class Singleton{
         return instance;
     }
 }
-*/
+
+/*
 public class Singleton{
 
     private static Singleton instance = null;
@@ -21,5 +22,7 @@ public class Singleton{
     public static synchronized Singleton getInstance(){
         if (instance==null)instance=new Singleton();
         return instance;
+
     }
 }
+*/

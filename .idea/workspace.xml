@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bdc77b-5f2c-4a5c-b825-61cd7c266753" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/ruanda/C190604/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/ruanda/rsa/RSACode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cryptoCode04/cn/ruanda/C190604/Box.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cryptoCode04/cn/ruanda/C190604/Box.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cryptoCode04/cn/ruanda/C190604/MaoPao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cryptoCode04/cn/ruanda/C190604/MaoPao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cryptoCode04/cn/ruanda/C190604/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cryptoCode04/cn/ruanda/C190604/Singleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/ruanda/C190604/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ruanda/C190604/Box.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/ruanda/C190604/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ruanda/C190604/Singleton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,6 +133,8 @@
       <workItem from="1606390250675" duration="94000" />
       <workItem from="1606446592393" duration="967000" />
       <workItem from="1606458935034" duration="1928000" />
+      <workItem from="1606572995883" duration="114000" />
+      <workItem from="1606646850899" duration="1306000" />
     </task>
     <servers />
   </component>
@@ -182,10 +178,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="838" height="199" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606203767746" />
-    <state x="534" y="482" width="612" height="342" key="com.intellij.ide.util.TipDialog" timestamp="1606458940174">
+    <state x="534" y="482" width="612" height="342" key="com.intellij.ide.util.TipDialog" timestamp="1606647060525">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="534" y="482" width="612" height="342" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1606458940174" />
+    <state x="534" y="482" width="612" height="342" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1606647060525" />
     <state x="875" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606201207509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
