@@ -4,7 +4,12 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.security.*;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.X509EncodedKeySpec;
 
 /*
 * 该类用于实现RSA算法的操作，包括密钥生成，加解密，签名验签等操作
@@ -20,6 +25,51 @@ public class RSACode {
         //调用解密方法进行解密
         byte[] originalTxt= code.decrypt(cipherTxt,keyPair.getPrivate());
         System.out.println(originalTxt);
+    }
+
+    public PrivateKey readPriByPem(String file_name){
+        // TODO: 2020/11/30
+        return null;
+    }
+
+    public PublicKey readPubByPem(String file_name){
+        return null;
+    }
+    //==========================通过读取密钥文件恢复公钥和私钥
+    public PublicKey loadPubByDer(String file_name){
+        try {
+            byte[] pubBytes = Files.readAllBytes(Paths.get(file_name));
+            X509EncodedKeySpec spec = new X509EncodedKeySpec(pubBytes);
+            KeyFactory factory = KeyFactory.getInstance("RSA");
+            return factory.generatePublic(spec);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (InvalidKeySpecException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    /**
+     *
+     * @param file_name
+     * @return
+     */
+    public PrivateKey loadPriByDer(String file_name){
+        try {
+            byte[] PriBytes=Files.readAllBytes(Paths.get(file_name));
+            X509EncodedKeySpec spec = new X509EncodedKeySpec(PriBytes);
+            KeyFactory factory = KeyFactory.getInstance("RSA");
+            return factory.generatePrivate(spec);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (InvalidKeySpecException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /**
